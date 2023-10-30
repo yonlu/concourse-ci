@@ -3,6 +3,9 @@ resources:
   type: git
   source:
     uri: https://github.com/yonlu/concourse-ci.git
+  git_config:
+  - name: safe.directory
+    value: /tmp/build/get
 
 jobs:
 - name: hello-world-job
